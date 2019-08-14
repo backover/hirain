@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.face">
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+
+
+    <application
+            android:name=".Detect.Application"
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="4deb70f361edc04caed17986129cb936"/>
+        <meta-data
+            android:name="com.baidu.speech.APP_ID"
+            android:value="16703078"/>
+        <meta-data
+            android:name="com.baidu.speech.API_KEY"
+            android:value="LOYM3G0KASZWgArQqMqiS8yh"/>
+        <meta-data
+            android:name="com.baidu.speech.SECRET_KEY"
+            android:value="uTLtkVhE4RNB2ozBnggyWALePoGjopi3"/>
+        <service android:name="com.baidu.speech.VoiceRecognitionService" android:exported="false"/>
+        <activity android:name=".Detect.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Detect.RegisterActivity"/>
+        <activity android:name=".Detect.DetecterActivity"/>
+        <activity android:name=".login.LoginAction"/>
+        <activity android:name=".Map.MapActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".Detect.LoginRegisterActivity" android:configChanges="orientation|keyboard|keyboardHidden|screenSize"/>
+        <activity android:name=".Detect.QRCodeActivity"/>
+        <activity android:name=".Detect.VoiceActivity"/>
+        <activity android:name=".Map.UdpActivity"/>
+        <activity android:name=".BluetoothActivity"/>
+        <activity android:name=".Bluetooth.BLEActivity"/>
+        <activity android:name=".Bluetooth.DeviceDetailActivity"/>
+        <activity android:name=".Bluetooth.CharacterActivity"/>
+
+    </application>
+
+</manifest>
