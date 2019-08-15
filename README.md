@@ -97,11 +97,6 @@ https://ai.baidu.com/docs#/ASR-Android-SDK/top
 QRCode 扫描二维码、扫描条形码、相册获取图片后识别、生成带 Logo 二维码、支持微博微信、QQ 二维码扫描样式。对Zbar和Zxing都做了优化，扫描速度非常快，用户体验很好，用起来也非常方便
 
 ## 蓝牙
->经典蓝牙
-
-1. BluetoothActivity为经典蓝牙
-2. 参考文章
-https://www.jianshu.com/p/7fcab74653d8
 
 >低功耗蓝牙
 
