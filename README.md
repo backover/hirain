@@ -101,7 +101,7 @@ QRCode 扫描二维码、扫描条形码、相册获取图片后识别、生成�
 >低功耗蓝牙
 
 1. BLEActivity为低功耗蓝牙
-2. 使用第三方库BluetoothKit
+2. 使用第三方库[BluetoothKit](https://github.com/dingjikerbo/Android-BluetoothKit)
 3. 参考文章
 https://www.jianshu.com/p/6dca236f6ad5
 
